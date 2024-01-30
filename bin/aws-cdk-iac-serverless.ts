@@ -2,6 +2,7 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { AwsCdkIacServerlessStack } from '../lib/aws-cdk-iac-serverless-stack';
+import { UiStack } from '../lib/ui-stack';
 
 const app = new cdk.App();
 new AwsCdkIacServerlessStack(app, 'AwsCdkIacServerlessStack', {
@@ -19,3 +20,5 @@ new AwsCdkIacServerlessStack(app, 'AwsCdkIacServerlessStack', {
 
     /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+new UiStack(app, 'UIStack', {});
