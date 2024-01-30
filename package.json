@@ -11,17 +11,37 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/aws-lambda": "^8.10.132",
+    "@types/busboy": "^1.5.3",
     "@types/jest": "^29.5.11",
+    "@types/mailparser": "^3.4.4",
     "@types/node": "20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "aws-cdk": "2.118.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
-    "aws-cdk": "2.118.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.3.3"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.502.0",
+    "@aws-sdk/client-eventbridge": "^3.502.0",
+    "@aws-sdk/client-s3": "^3.502.0",
+    "@aws-sdk/client-sqs": "^3.502.0",
+    "@aws-sdk/client-ssm": "^3.502.0",
+    "@aws-sdk/lib-dynamodb": "^3.502.0",
+    "@sendgrid/mail": "^8.1.0",
     "aws-cdk-lib": "2.118.0",
+    "axios": "^1.6.7",
+    "busboy": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
     "constructs": "^10.0.0",
+    "mailparser": "^3.6.6",
+    "short-unique-id": "^5.0.3",
     "source-map-support": "^0.5.21"
   }
 }
