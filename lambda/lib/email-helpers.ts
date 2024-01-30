@@ -47,7 +47,12 @@ export function getLatestMessage(parsedEmail: Record<string, any>): {
     parts: {  type: 'text' | 'attachment' | 'link', value: 'string', id?: string }[]
 } {
     const attachments = getAttachments(parsedEmail);
-    const textParts = parsedEmail.text.split('________________________________\n');
+    let textParts = [];
+    if (parsedEmail.text.includes('-----Original Message-----')) {
+        textParts = parsedEmail.text.split('-----Original Message-----');
+    } else {
+        textParts = parsedEmail.text.split('________________________________\n');
+    }
     const latestMessage = textParts[0]; // Latest message is the first part
 
     const resultArray = [];
