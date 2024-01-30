@@ -20,6 +20,12 @@ export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGateway
     const path = event.pathParameters?.proxy as string;
     const method = event.requestContext.http.method;
 
+    if (method === 'OPTIONS') {
+        return {
+            statusCode: 200
+        };
+    }
+
 
     if (!path) {
         return {
