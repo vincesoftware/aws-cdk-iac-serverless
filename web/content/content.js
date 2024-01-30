@@ -44,7 +44,7 @@ const template = `
         <div v-for="(comment, idx) in state.selectedIssueComments" :key="'com' + idx" :class="{ 'internal': comment.type === 'internal', 'response': comment.from.endsWith('@beef.support') }">
             <h4>{{ comment.from }}</h4>
             <span v-if="comment.type === 'internal'"><em>INTERNAL COMMENT</em></span>
-            <blockquote>{{ comment.message }}</blockquote>
+            <blockquote style="padding: 10px;">{{ comment.message }}</blockquote>
             
             <p>Updated at {{ comment.lastUpdated }}</p>
         </div>
