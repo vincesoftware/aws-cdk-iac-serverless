@@ -9,6 +9,14 @@ It also has an administration interface for support staff to add comments to tic
 which are automatically sent to the ticket creator,
 as well as support for _internal_ messages that are not sent to the customer.
 
+### Overview
+
+An overview chart of the application:
+
+![Application overview](.docs/overview.png)
+
+### Services used
+
 It utilizes the following AWS Serverless services:
 
 * API Gateway
