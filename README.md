@@ -5,7 +5,9 @@
 This project demonstrates some of the capabilities of AWS IaC and Serverless.
 
 The application is an IT support ticket system with fairly sarcastic, somewhat douche-y, auto-generated responses.
-It also has an administration interface for support staff to add comments to tickets,
+The AI has a _beef_ with the users, and it is not afraid to show it.
+
+It also has an administration UI for support staff to add comments to tickets,
 which are automatically sent to the ticket creator,
 as well as support for _internal_ messages that are not sent to the customer.
 
@@ -32,12 +34,23 @@ It utilizes the following AWS Serverless services:
 * SendGrid Email API (sending emails)
 * OpenAI (generating snarky responses)
 
-### Disclaimer
+### Disclaimer - IMPORTANT
 
 > [!CAUTION]
 > This code is a proof of concept. Do NOT use this code in production, but feel free to be inspired by it or scoff at it.
 >
 > Some of the code, quite frankly, is somewhat embarrassing...
+
+The code publishes internet facing endpoints,
+so anyone can access these resources if they find them (which might be unlikely, but could happen).
+
+Bad practice implementations in this code: 
+
+* API authentication is using hardcoded token
+* Inbound webhook uses a hardcoded token
+* Hardcoded values are committed in the source
+
+Always ensure that you secure your application properly!
 
 ## Prerequisites
 
