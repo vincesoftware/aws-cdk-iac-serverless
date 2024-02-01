@@ -34,9 +34,10 @@ It utilizes the following AWS Serverless services:
 
 ### Disclaimer
 
-This code is a proof of concept. Do NOT use this code in production, but feel free to be inspired by it or scoff at it.
-
-Some of the code, quite frankly, is somewhat embarrassing.
+> [!CAUTION]
+> This code is a proof of concept. Do NOT use this code in production, but feel free to be inspired by it or scoff at it.
+>
+> Some of the code, quite frankly, is somewhat embarrassing...
 
 ## Prerequisites
 
